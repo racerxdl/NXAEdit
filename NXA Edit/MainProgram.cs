@@ -34,6 +34,7 @@ namespace NXA_Edit {
 
     public MainProgram() {
       InitializeComponent();
+      this.Text = string.Format("{0} - Version: {1} - Build Number: {2}", this.Text, BuildConfig.VERSION, BuildConfig.BUILD_VERSION);
     }
 
     private void loadNX2Button_Click(object sender, EventArgs e) {

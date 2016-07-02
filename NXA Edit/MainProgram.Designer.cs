@@ -308,7 +308,7 @@
       this.Controls.Add(this.loadNX2Button);
       this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
       this.Name = "MainProgram";
-      this.Text = "Hackamiro NX2/NXA Editor";
+      this.Text = "NX2/NXA Editor";
       this.Load += new System.EventHandler(this.MainProgram_Load);
       this.groupBox1.ResumeLayout(false);
       this.groupBox1.PerformLayout();
