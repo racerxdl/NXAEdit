@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{256B1B42-EB17-417D-9BC0-BD2F1F43AF48}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NXA_Edit</RootNamespace>
+    <AssemblyName>NXA Edit</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>NXA_Edit.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\32x32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="MainProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainProgram.Designer.cs">
+      <DependentUpon>MainProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NXA.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structs\ReviewAreaStruct.cs" />
+    <Compile Include="Structs\StateAreaStruct.cs" />
+    <Compile Include="Structs\WorldMaxScoreTableStruct.cs" />
+    <Compile Include="Tools.cs" />
+    <Compile Include="USBDrive.cs" />
+    <EmbeddedResource Include="MainProgram.resx">
+      <DependentUpon>MainProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\16x16.ico" />
+    <Content Include="Resources\32x32.ico" />
+    <None Include="Resources\CH_001.PNG" />
+    <None Include="Resources\CH_002.PNG" />
+    <None Include="Resources\CH_003.PNG" />
+    <None Include="Resources\CH_004.PNG" />
+    <None Include="Resources\CH_005.PNG" />
+    <None Include="Resources\CH_006.PNG" />
+    <None Include="Resources\CH_007.PNG" />
+    <None Include="Resources\CH_008.PNG" />
+    <None Include="Resources\CH_009.PNG" />
+    <None Include="Resources\CH_010.PNG" />
+    <None Include="Resources\CH_011.PNG" />
+    <None Include="Resources\CH_012.PNG" />
+    <None Include="Resources\CH_013.PNG" />
+    <None Include="Resources\CH_014.PNG" />
+    <None Include="Resources\CH_015.PNG" />
+    <None Include="Resources\CH_016.PNG" />
+    <None Include="Resources\CH_017.PNG" />
+    <None Include="Resources\CH_018.PNG" />
+    <None Include="Resources\CH_019.PNG" />
+    <None Include="Resources\CH_020.PNG" />
+    <None Include="Resources\CH_021.PNG" />
+    <None Include="Resources\CH_022.PNG" />
+    <None Include="Resources\CH_023.PNG" />
+    <None Include="Resources\CH_024.PNG" />
+    <None Include="Resources\CH_025.PNG" />
+    <None Include="Resources\CH_026.PNG" />
+    <None Include="Resources\CH_027.PNG" />
+    <None Include="Resources\CH_028.PNG" />
+    <None Include="Resources\CH_029.PNG" />
+    <None Include="Resources\CH_030.PNG" />
+    <None Include="Resources\CH_031.PNG" />
+    <None Include="Resources\CH_032.PNG" />
+    <None Include="Resources\CH_033.PNG" />
+    <None Include="Resources\CH_034.PNG" />
+    <None Include="Resources\CH_035.PNG" />
+    <None Include="Resources\CH_036.PNG" />
+    <None Include="Resources\CH_037.PNG" />
+    <None Include="Resources\CH_038.PNG" />
+    <None Include="Resources\CH_039.PNG" />
+    <None Include="Resources\CH_040.PNG" />
+    <None Include="Resources\CH_041.PNG" />
+    <None Include="Resources\CH_042.PNG" />
+    <None Include="Resources\CH_043.PNG" />
+    <None Include="Resources\CH_044.PNG" />
+    <None Include="Resources\CH_045.PNG" />
+    <None Include="Resources\CH_046.PNG" />
+    <None Include="Resources\CH_047.PNG" />
+    <None Include="Resources\CH_048.PNG" />
+    <None Include="Resources\CH_049.PNG" />
+    <None Include="Resources\CH_050.PNG" />
+    <None Include="Resources\CH_051.PNG" />
+    <None Include="Resources\CH_052.PNG" />
+    <None Include="Resources\CH_053.PNG" />
+    <None Include="Resources\CH_054.PNG" />
+    <None Include="Resources\CH_055.PNG" />
+    <None Include="Resources\CH_056.PNG" />
+    <None Include="Resources\CH_057.PNG" />
+    <None Include="Resources\CH_058.PNG" />
+    <None Include="Resources\CH_059.PNG" />
+    <None Include="Resources\CH_060.PNG" />
+    <None Include="Resources\CH_061.PNG" />
+    <None Include="Resources\CH_062.PNG" />
+    <None Include="Resources\CH_063.PNG" />
+    <None Include="Resources\CH_064.PNG" />
+    <None Include="Resources\CH_065.PNG" />
+    <None Include="Resources\CH_066.PNG" />
+    <None Include="Resources\CH_067.PNG" />
+    <None Include="Resources\CH_068.PNG" />
+    <None Include="Resources\CH_069.PNG" />
+    <None Include="Resources\CH_070.PNG" />
+    <None Include="Resources\CH_071.PNG" />
+    <None Include="Resources\CH_072.PNG" />
+    <None Include="Resources\CH_073.PNG" />
+    <None Include="Resources\CH_074.PNG" />
+    <None Include="Resources\CH_075.PNG" />
+    <None Include="Resources\CH_076.PNG" />
+    <None Include="Resources\CH_077.PNG" />
+    <None Include="Resources\CH_078.PNG" />
+    <None Include="Resources\CH_079.PNG" />
+    <None Include="Resources\CH_080.PNG" />
+    <None Include="Resources\CH_081.PNG" />
+    <None Include="Resources\CH_082.PNG" />
+    <None Include="Resources\CH_083.PNG" />
+    <None Include="Resources\CH_084.PNG" />
+    <None Include="Resources\CH_085.PNG" />
+    <None Include="Resources\CH_086.PNG" />
+    <None Include="Resources\CH_087.PNG" />
+    <None Include="Resources\CH_088.PNG" />
+    <None Include="Resources\CH_089.PNG" />
+    <None Include="Resources\CH_090.PNG" />
+    <None Include="Resources\CH_091.PNG" />
+    <None Include="Resources\CH_092.PNG" />
+    <None Include="Resources\CH_093.PNG" />
+    <None Include="Resources\CH_094.PNG" />
+    <None Include="Resources\CH_095.PNG" />
+    <None Include="Resources\CH_096.PNG" />
+    <None Include="Resources\CH_097.PNG" />
+    <None Include="Resources\CH_098.PNG" />
+    <None Include="Resources\CH_099.PNG" />
+    <None Include="Resources\CH_100.PNG" />
+    <None Include="Resources\CH_101.PNG" />
+    <None Include="Resources\CH_102.PNG" />
+    <None Include="Resources\CH_103.PNG" />
+    <None Include="Resources\CH_104.PNG" />
+    <None Include="Resources\CH_105.PNG" />
+    <None Include="Resources\CH_106.PNG" />
+    <None Include="Resources\CH_107.PNG" />
+    <None Include="Resources\CH_108.PNG" />
+    <None Include="Resources\CH_109.PNG" />
+    <None Include="Resources\CH_110.PNG" />
+    <None Include="Resources\CH_111.PNG" />
+    <None Include="Resources\CH_112.PNG" />
+    <None Include="Resources\CH_113.PNG" />
+    <None Include="Resources\CH_114.PNG" />
+    <None Include="Resources\CH_115.PNG" />
+    <None Include="Resources\CH_116.PNG" />
+    <None Include="Resources\CH_117.PNG" />
+    <None Include="Resources\CH_118.PNG" />
+    <None Include="Resources\CH_119.PNG" />
+    <None Include="Resources\CH_120.PNG" />
+    <None Include="Resources\CH_121.PNG" />
+    <None Include="Resources\CH_122.PNG" />
+    <None Include="Resources\CH_123.PNG" />
+    <None Include="Resources\CH_124.PNG" />
+    <None Include="Resources\CH_125.PNG" />
+    <None Include="Resources\CH_126.PNG" />
+    <None Include="Resources\CH_127.PNG" />
+    <None Include="Resources\CH_128.PNG" />
+    <None Include="Resources\CH_129.PNG" />
+    <None Include="Resources\CH_130.PNG" />
+    <None Include="Resources\CH_131.PNG" />
+    <None Include="Resources\CH_132.PNG" />
+    <None Include="Resources\CH_133.PNG" />
+    <None Include="Resources\CH_134.PNG" />
+    <None Include="Resources\CH_135.PNG" />
+    <None Include="Resources\CH_136.PNG" />
+    <None Include="Resources\CH_137.PNG" />
+    <None Include="Resources\CH_138.PNG" />
+    <None Include="Resources\CH_139.PNG" />
+    <None Include="Resources\CH_140.PNG" />
+    <None Include="Resources\CH_141.PNG" />
+    <None Include="Resources\CH_142.PNG" />
+    <None Include="Resources\CH_143.PNG" />
+    <None Include="Resources\CH_144.PNG" />
+    <None Include="Resources\CH_145.PNG" />
+    <None Include="Resources\CH_146.PNG" />
+    <None Include="Resources\CH_147.PNG" />
+    <None Include="Resources\CH_148.PNG" />
+    <None Include="Resources\CH_149.PNG" />
+    <None Include="Resources\CH_150.PNG" />
+    <None Include="Resources\CH_151.PNG" />
+    <None Include="Resources\CH_152.PNG" />
+    <None Include="Resources\CH_153.PNG" />
+    <None Include="Resources\CH_154.PNG" />
+    <None Include="Resources\CH_155.PNG" />
+    <None Include="Resources\CH_156.PNG" />
+    <None Include="Resources\CH_157.PNG" />
+    <None Include="Resources\CH_158.PNG" />
+    <None Include="Resources\CH_159.PNG" />
+    <None Include="Resources\CH_160.PNG" />
+    <None Include="Resources\CH_161.PNG" />
+    <None Include="Resources\CH_162.PNG" />
+    <None Include="Resources\CH_163.PNG" />
+    <None Include="Resources\CH_164.PNG" />
+    <None Include="Resources\CH_165.PNG" />
+    <None Include="Resources\CH_166.PNG" />
+    <None Include="Resources\CH_167.PNG" />
+    <None Include="Resources\CH_168.PNG" />
+    <None Include="Resources\CH_169.PNG" />
+    <None Include="Resources\CH_170.PNG" />
+    <None Include="Resources\CH_171.PNG" />
+    <None Include="Resources\CH_172.PNG" />
+    <None Include="Resources\CH_173.PNG" />
+    <None Include="Resources\CH_174.PNG" />
+    <None Include="Resources\CH_175.PNG" />
+    <None Include="Resources\CH_176.PNG" />
+    <None Include="Resources\CH_177.PNG" />
+    <None Include="Resources\CH_178.PNG" />
+    <None Include="Resources\CH_179.PNG" />
+    <None Include="Resources\CH_180.PNG" />
+    <None Include="Resources\CH_181.PNG" />
+    <None Include="Resources\CH_182.PNG" />
+    <None Include="Resources\CH_183.PNG" />
+    <None Include="Resources\CH_184.PNG" />
+    <None Include="Resources\CH_185.PNG" />
+    <None Include="Resources\CH_186.PNG" />
+    <None Include="Resources\CH_187.PNG" />
+    <None Include="Resources\CH_190.PNG" />
+    <None Include="Resources\CH_191.PNG" />
+    <None Include="Resources\CH_192.PNG" />
+    <None Include="Resources\CH_193.PNG" />
+    <None Include="Resources\CH_194.PNG" />
+    <None Include="Resources\CH_195.PNG" />
+    <None Include="Resources\CH_196.PNG" />
+    <None Include="Resources\CH_197.PNG" />
+    <None Include="Resources\CH_203.PNG" />
+    <None Include="Resources\CH_204.PNG" />
+    <None Include="Resources\CH_205.PNG" />
+    <None Include="Resources\CH_206.PNG" />
+    <None Include="Resources\CH_209.PNG" />
+    <None Include="Resources\CH_210.PNG" />
+    <None Include="Resources\CH_214.PNG" />
+    <None Include="Resources\CH_215.PNG" />
+    <None Include="Resources\CH_216.PNG" />
+    <Content Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

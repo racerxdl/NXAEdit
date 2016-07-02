@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CH_001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_001.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_002.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_003" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_003.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_004" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_004.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_005" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_005.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_006" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_006.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_007" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_007.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_008" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_008.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_009" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_009.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_010" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_010.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_011" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_011.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_012" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_012.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_013" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_013.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_014" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_014.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_015" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_015.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_016" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_016.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_017" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_017.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_018" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_018.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_019" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_019.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_020" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_020.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_021" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_021.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_022" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_022.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_023" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_023.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_024" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_024.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_025" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_025.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_026" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_026.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_027" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_027.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_028" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_028.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_029" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_029.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_030" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_030.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_031" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_031.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_032" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_032.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_033" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_033.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_034" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_034.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_035" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_035.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_036" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_036.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_037" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_037.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_038" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_038.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_039" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_039.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_040" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_040.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_041" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_041.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_042" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_042.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_043" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_043.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_044" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_044.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_045" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_045.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_046" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_046.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_047" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_047.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_048" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_048.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_049" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_049.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_050" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_050.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_051" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_051.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_052" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_052.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_053" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_053.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_054" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_054.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_055" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_055.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_056" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_056.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_057" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_057.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_058" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_058.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_059" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_059.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_060" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_060.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_061" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_061.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_062" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_062.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_063" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_063.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_064" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_064.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_065" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_065.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_066" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_066.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_067" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_067.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_068" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_068.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_069" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_069.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_070" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_070.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_071" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_071.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_072" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_072.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_073" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_073.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_074" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_074.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_075" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_075.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_076" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_076.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_077" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_077.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_078" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_078.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_079" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_079.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_080" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_080.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_081" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_081.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_082" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_082.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_083" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_083.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_084" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_084.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_085" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_085.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_086" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_086.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_087" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_087.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_088" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_088.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_089" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_089.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_090" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_090.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_091" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_091.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_092" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_092.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_093" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_093.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_094" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_094.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_095" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_095.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_096" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_096.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_097" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_097.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_098" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_098.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_099" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_099.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_100.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_101.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_102" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_102.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_103" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_103.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_104" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_104.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_105" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_105.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_106" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_106.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_107" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_107.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_108" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_108.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_109" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_109.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_110.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_111.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_112" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_112.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_113" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_113.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_114" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_114.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_115" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_115.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_116" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_116.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_117" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_117.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_118" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_118.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_119" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_119.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_120" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_120.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_121.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_122.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_123" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_123.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_124" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_124.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_125" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_125.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_126" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_126.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_127" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_127.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_128.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_129" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_129.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_130" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_130.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_131" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_131.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_132" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_132.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_133" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_133.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_134" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_134.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_135" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_135.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_136" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_136.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_137" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_137.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_138" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_138.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_139" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_139.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_140" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_140.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_141" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_141.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_142" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_142.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_143" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_143.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_144" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_144.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_145" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_145.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_146" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_146.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_147" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_147.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_148" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_148.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_149" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_149.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_150" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_150.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_151" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_151.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_152" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_152.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_153" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_153.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_154" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_154.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_155" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_155.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_156" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_156.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_157" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_157.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_158" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_158.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_159" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_159.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_160" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_160.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_161.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_162" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_162.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_163" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_163.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_164" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_164.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_165" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_165.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_166" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_166.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_167" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_167.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_168" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_168.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_169" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_169.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_170" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_170.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_171.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_172" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_172.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_173" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_173.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_174" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_174.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_175" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_175.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_176" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_176.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_177" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_177.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_178" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_178.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_179" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_179.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_180.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_181" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_181.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_182" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_182.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_183" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_183.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_184" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_184.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_185" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_185.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_186" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_186.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_187" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_187.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_190" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_190.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_191" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_191.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_192" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_192.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_193" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_193.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_194" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_194.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_195" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_195.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_196" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_196.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_197" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_197.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_203" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_203.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_204" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_204.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_205" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_205.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_206" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_206.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_209" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_209.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_210" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_210.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_214" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_214.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_215" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_215.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CH_216" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CH_216.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
