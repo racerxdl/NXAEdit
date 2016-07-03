@@ -43,4 +43,9 @@ public static class Extensions {
   public static string ToStringFromUTF8(this byte[] bytes) {
     return Encoding.UTF8.GetString(bytes).Split('\0')[0];
   }
+  public static UInt32 ReverseBytes(this UInt32 value) {
+    return (value & 0x000000FFU) << 24 | (value & 0x0000FF00U) << 8 |
+           (value & 0x00FF0000U) >> 8 | (value & 0xFF000000U) >> 24;
+  }
+
 }

@@ -20,10 +20,9 @@ using System;
 using System.Runtime.InteropServices;
 
 namespace NXA_Edit.Structs {
-  [StructLayout(LayoutKind.Sequential, Size = 30692), Serializable]
+  [StructLayout(LayoutKind.Sequential, Size = 90544), Serializable]
   public struct StateAreaStruct {
-    [MarshalAsAttribute(UnmanagedType.ByValArray, SizeConst = 4)]
-    public byte[] crc;
+    public uint crc;
     [MarshalAsAttribute(UnmanagedType.ByValArray, SizeConst = 64)]
     public byte[] usbserial;
     public short year;
@@ -65,7 +64,7 @@ namespace NXA_Edit.Structs {
     public byte[] unusedspace2;
     [MarshalAsAttribute(UnmanagedType.ByValArray, SizeConst = 576)]
     public byte[] songlocks;            //  0x40 Unlock the song
-    [MarshalAsAttribute(UnmanagedType.ByValArray, SizeConst = 36)]
+    [MarshalAsAttribute(UnmanagedType.ByValArray, SizeConst = 50780)]
     public byte[] unusedspace3;
   }
 }

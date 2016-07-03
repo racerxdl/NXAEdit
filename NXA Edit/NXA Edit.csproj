@@ -82,7 +82,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structs\ReviewAreaStruct.cs" />
     <Compile Include="Structs\StateAreaStruct.cs" />
-    <Compile Include="Structs\WorldMaxScoreTableStruct.cs" />
+    <Compile Include="Structs\ScoreTableStruct.cs" />
     <Compile Include="Tools.cs" />
     <Compile Include="USBDrive.cs" />
     <EmbeddedResource Include="MainProgram.resx">

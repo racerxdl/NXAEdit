@@ -19,7 +19,7 @@
 namespace NXA_Edit {
   class Constants {
     public static readonly int NX2PAD_SAVE = 0x124;
-    public static readonly int NXAPAD_SAVE = 0x144;
+    public static readonly int NXA_STATAREA = 0x144;
     public static readonly int SAVE_NAME1 = 0x0;
     public static readonly int SAVE_NAME2 = 0x58;
     public static readonly int SAVE_SERIAL = 0x4;

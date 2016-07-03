@@ -152,16 +152,28 @@ namespace NXA_Edit {
       for (int i = 0; i < nameSize; i++) {
         encSave[i + Constants.SAVE_NAME2] = (byte)usbNameEdit.Text[i];
       }
-      for (int i = nameSize; i < 8; i++)
+      for (int i = nameSize; i < 8; i++) {
         encSave[i + Constants.SAVE_NAME2] = 0x00; // Fill remaining bytes if needed
+      }
 
       encSave[Constants.SAVE_AVATAR] = (byte)(saveAvatar & 0xFF);
+
+      // Calculate CRC
+      uint crc = Tools.adler32(encSave, 4, encSave.Length - 4, 1);
+      Console.WriteLine("CRC: {0}", crc);
+      encSave[3] = (byte)((crc & 0x000000FF) >> 0);
+      encSave[2] = (byte)((crc & 0x0000FF00) >> 8);
+      encSave[1] = (byte)((crc & 0x00FF0000) >> 16);
+      encSave[0] = (byte)((crc & 0xFF000000) >> 24);
+
       Tools.Encode(encSave);
+
       if (NXALoaded) {
         File.WriteAllBytes("nxasave.bin", Tools.Combine(uncSave, encSave, new byte[0]));
       } else {
         File.WriteAllBytes("nx2save.bin", Tools.Combine(uncSave, encSave, new byte[0]));
       }
+
       Tools.Decode(encSave);
       MessageBox.Show("Saved!");
     }
@@ -178,8 +190,8 @@ namespace NXA_Edit {
       if (File.Exists("nxasave.bin") && File.Exists("nxarank.bin")) {
         // Read All Data
         saveBytes = File.ReadAllBytes("nxasave.bin");
-        uncSave = saveBytes.SubArray(0, Constants.NXAPAD_SAVE);
-        encSave = saveBytes.SubArray(Constants.NXAPAD_SAVE, saveBytes.Length - Constants.NXAPAD_SAVE);
+        uncSave = saveBytes.SubArray(0, Constants.NXA_STATAREA);
+        encSave = saveBytes.SubArray(Constants.NXA_STATAREA, saveBytes.Length - Constants.NXA_STATAREA);
         rankBytes = File.ReadAllBytes("nxarank.bin");
         
         // Decode Data
@@ -202,6 +214,7 @@ namespace NXA_Edit {
         NXALoaded = true;
         debugMessages.Text += "\r\nLoaded NXA save!";
         NXA x = new NXA(saveBytes);
+        debugMessages.Text += "\r\nCRC Match: " + x.checkCRC();
         debugMessages.Text += "\r\nCurrentLand: " + (x.CurrentLand);
         debugMessages.Text += "\r\nDongleID: " + (x.StateArea.dongleid);
       } else {

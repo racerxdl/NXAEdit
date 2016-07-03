@@ -18,6 +18,7 @@
 
 using System.Runtime.InteropServices;
 using NXA_Edit.Structs;
+using System;
 
 namespace NXA_Edit {
   /// <summary>
@@ -51,6 +52,42 @@ namespace NXA_Edit {
       handle = GCHandle.Alloc(buff, GCHandleType.Pinned);
       stateArea = (StateAreaStruct)Marshal.PtrToStructure(handle.AddrOfPinnedObject(), typeof(StateAreaStruct));
       handle.Free();
+    }
+
+    public bool checkCRC() {
+      uint crc = Tools.adler32(StateAreaBytes, 4, Marshal.SizeOf(typeof(StateAreaStruct)) - 4, 1);
+      Console.WriteLine("CRC: {0} - Expected: {1}", crc, stateArea.crc);
+      return crc == stateArea.crc;
+    }
+
+    public void updateCRC() {
+      stateArea.crc = Tools.adler32(StateAreaBytes, 4, Marshal.SizeOf(typeof(StateAreaStruct)) - 4, 1);
+    }
+
+    public byte[] ReviewAreaBytes {
+      get {
+        int size = Marshal.SizeOf(reviewArea);
+        byte[] arr = new byte[size];
+
+        IntPtr ptr = Marshal.AllocHGlobal(size);
+        Marshal.StructureToPtr(reviewArea, ptr, true);
+        Marshal.Copy(ptr, arr, 0, size);
+        Marshal.FreeHGlobal(ptr);
+        return arr;
+      }
+    }
+
+    public byte[] StateAreaBytes {
+      get {
+        int size = Marshal.SizeOf(stateArea);
+        byte[] arr = new byte[size];
+
+        IntPtr ptr = Marshal.AllocHGlobal(size);
+        Marshal.StructureToPtr(stateArea, ptr, true);
+        Marshal.Copy(ptr, arr, 0, size);
+        Marshal.FreeHGlobal(ptr);
+        return arr;
+      }
     }
 
     public ReviewAreaStruct ReviewArea {
